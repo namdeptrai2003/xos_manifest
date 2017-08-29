@@ -8,9 +8,6 @@
           fetch="https://github.com/halogenOS/"
           review="https://review.halogenos.org/" />
 
-  <remote name="unknown"
-          fetch="https://github.com/namdeptrai2003/" />
-
   <remote name="XOSgerrit"
           fetch="https://review.halogenos.org/" />
 
@@ -163,7 +160,7 @@
 
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
-  <project name="android_vendor_xos" path="vendor/xos" remote="unknown" />
+  <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
 
   <!-- Substratum -->
   <project name="android_packages_services_interfacer" path="packages/services/interfacer" remote="XOS" />
