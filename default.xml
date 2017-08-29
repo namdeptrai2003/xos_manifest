@@ -8,6 +8,9 @@
           fetch="https://github.com/halogenOS/"
           review="https://review.halogenos.org/" />
 
+  <remote name="unknown"
+          fetch="https://github.com/namdeptrai2003/" />
+
   <remote name="XOSgerrit"
           fetch="https://review.halogenos.org/" />
 
@@ -55,6 +58,14 @@
            sync-j="16" />
 
   <!-- End Remotes -->
+  
+ <!-- KYLEPROXX -->
+  <project path="device/samsung/kyleproxx" name="namdeptrai2003/android_device_samsung_kyleproxx" remote="github" revision="xos-7.1.x" />
+  <project path="kernel/samsung/kyleproxx" name="ishantvivek/android_kernel_samsung_kyleproxx" remote="github" revision="cm-14.1-3.4.113" />
+  <project path="vendor/samsung/kyleproxx" name="ishantvivek/android_vendor_samsung_kyleproxx" remote="github" revision="7.0" />
+  <project path="external/chromium-webview" name="ishantvivek/android_external_chromium-webview" clone-depth="1" remote="github" revision="7.0" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
+ <!-- END KYLEPROXX -->
 
   <!-- halogenOS -->
 
@@ -152,7 +163,7 @@
 
   <!-- Vendor -->
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="XOS" />
-  <project name="android_vendor_xos" path="vendor/xos" remote="XOS" />
+  <project name="android_vendor_xos" path="vendor/xos" remote="unknown" />
 
   <!-- Substratum -->
   <project name="android_packages_services_interfacer" path="packages/services/interfacer" remote="XOS" />
@@ -164,8 +175,6 @@
 
   <!-- External -->
   <project name="android_external_f2fs-tools" path="external/f2fs-tools" remote="XOS" />
-  <project name="LineageOS/android_external_chromium-webview" path="external/chromium-webview"
-           remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Hardware -->
   <include name="hals/hals.xml" />
